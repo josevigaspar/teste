@@ -1,0 +1,21 @@
+<form action="https://formsubmit.co/viniciusgasparjose@gmail.com" method="POST">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" name="mensagem" required></textarea>
+
+  <!-- Proteção contra spam com Honeypot -->
+  <input type="text" name="_honey" style="display:none">
+
+  <!-- Redirecionar após o envio -->
+  <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+  <!-- Definir assunto do email -->
+  <input type="hidden" name="_subject" value="Novo Envio de Formulário">
+
+  <button type="submit">Enviar</button>
+</form>
